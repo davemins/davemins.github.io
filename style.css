@@ -1,3 +1,27 @@
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 /* --------------body-------------- */
 
 * {
@@ -46,6 +70,7 @@ nav::after {
 .nav-menu {
     float: right;
     margin: 0;
+    
 }
 
 
@@ -82,6 +107,7 @@ nav::after {
 .hd-content {
     font-size: 25px;
     text-align: center;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 
@@ -108,10 +134,13 @@ nav::after {
     text-align: center;
 }
 
-.card {
+.card > li{
     font-size: 25px;
     list-style-type: none;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
+
 
 /* --------------footer-------------- */
 
